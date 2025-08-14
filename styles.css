@@ -1,0 +1,110 @@
+:root {
+  --primary: #1b3a8a;
+  --light: #f9fafb;
+  --dark: #1f2937;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--dark);
+  background: #fff;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+.section {
+  padding: 2rem 1rem;
+}
+
+.alt {
+  background: var(--light);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.tagline {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--primary);
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.cards {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  background: var(--light);
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.list {
+  padding-left: 1.25rem;
+}
+
+.process {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.process li {
+  background: var(--light);
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+}
+
+form {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 400px;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.hero-contact a,
+.direct-contact a {
+  color: var(--primary);
+}
+
+.hero-contact {
+  margin-top: 1rem;
+}
